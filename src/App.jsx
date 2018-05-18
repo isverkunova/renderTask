@@ -29,16 +29,16 @@ const tasks = [
     }
 ];
 
-const TaskList = {
-    render () {
-        const importantTasks = tasks.filter(task => task.important);
+const TaskList = () => {
+    
+    const importantTasks = tasks.filter(task => task.important);
+    
+    const listOfTasks = importantTasks.map(
+        task => <li key = { task.id }>{ task.message }</li>
+    );
         
-        const listOfTasks = importantTasks.map(
-            task => <li key = { task.id }>{ task.message }</li>
-        );
-            
-        return <ul>{ listOfTasks }</ul>;
-    }
+    return <ul>{ listOfTasks }</ul>;
+    
 };
 
 
