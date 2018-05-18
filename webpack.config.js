@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = {
   mode: 'development',
   context: __dirname,
-  entry: "./src/App.js",
+  entry: "./src/App.jsx",
   //devtool: "cheap-eval-source-map",
   output: {
     path: path.join(__dirname, "public"),

@@ -29,7 +29,7 @@ const tasks = [
     }
 ];
 
-class TaskList extends React.Component {
+const TaskList = {
     render () {
         const importantTasks = tasks.filter(task => task.important);
         
